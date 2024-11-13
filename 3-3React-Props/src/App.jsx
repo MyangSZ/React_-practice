@@ -6,9 +6,9 @@ import './App.css'
 //함수형 컴포넌트
 
 // function App() {
-//   // 배열의 형태 useState(0) => [상태, 상태변경함수]
-//   // 구조분해 할당 문법 사용 const [상태, 상태변경함수] = useState(0)
-//   // useState로 상태를 만드는 코드는 최상단에 위치
+   // 배열의 형태 useState(0) => [상태, 상태변경함수]
+   // 구조분해 할당 문법 사용 const [상태, 상태변경함수] = useState(0)
+   // useState로 상태를 만드는 코드는 최상단에 위치
 //   const [counter, setCounter] = useState(0) 
 //   return (
 //     <>
@@ -18,7 +18,7 @@ import './App.css'
 //       array={[1, 2, 3, "안녕하세요"]}/>
 //     <button onClick={() => {
 //       setCounter((prev) => prev + 1) // 함수를 전달해서 변경하는 방법. 
-//       // (이전상태값) => 현재상태값(=이전상태값) +1
+       // (이전상태값) => 현재상태값(=이전상태값) +1
 //     }}>+</button>
 
 //     <button onClick={() => {
