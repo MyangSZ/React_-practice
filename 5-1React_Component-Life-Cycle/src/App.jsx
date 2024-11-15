@@ -15,8 +15,7 @@ return (
     show?</button>
     {/* 상태를 바꿀수 있는 버튼. 껏다 켰다 할 수 있는 버튼 */}
   </>
-)
-}
+)}
 
 function Counter() {
   const [counter, setCounter] =useState(1)
