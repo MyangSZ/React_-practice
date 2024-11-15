@@ -1,4 +1,4 @@
-import { Component, useState } from 'react'
+import { Component, useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
@@ -18,36 +18,21 @@ return (
 )
 }
 
-class Counter extends Component {
-  constructor() {
-    super();
-    this.state ={ counter: 1}
-    console.log('constructor')
-  }
+function Counter() {
+  const [counter, setCounter] =useState(1)
 
-componentDidMount() {
-  console.log("DidMount")
-}
-componentDidUpdate() {
-  console.log("DidUpdate")
-}
-componentWillUnmount() {
-  console.log("Willunmount")
-}
+  useEffect(() => {
+    console.log('useEffect')
+  })
 
-  render() {
-    console.log("render")
-    return (
+  return (
     <>
-    <div> counter : { this.state.counter }</div>
-    <button 
-    onClick={() => this.setState({
-      counter: this.state.counter + 1 })}
-      >
-      +1</button>
+    <div> counter : {counter}</div>
+    <button onClick={() => setCounter(counter + 1)}
+      >+1</button>
       {/* 버튼을 눌렀을 때 +1이 되도록 한다. */}
     </>)
   }
-}
+
 
 export default App
