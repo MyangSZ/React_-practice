@@ -3,6 +3,8 @@ import useFetch from './useFetch';
 
 // ⭐️ 이번 과제는 useFetch.jsx 파일에서 진행합니다.
 
+
+
 // 강아지 사진 오픈 API 주소
 const dogUrl = 'https://dog.ceo/api/breeds/image/random';
 // 고양이 사진 오픈 API 주소
