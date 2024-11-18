@@ -1,14 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [data, setData] = useState([])
+
+  useEffect (() => {
+    fetch("http://localhost:3000/data")
+    .then((res) => res.json())
+    .then((res) => setData(res))
+  }, [])
 
   return (
     <>
-      
+      <div>데이터 목록</div>
+      {data.map (el => <div key={el.id}
+      >{el.content}</div>)}
     </>
   )
 }
